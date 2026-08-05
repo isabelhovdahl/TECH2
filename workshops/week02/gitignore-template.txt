@@ -1,0 +1,18 @@
+# Given material — not this week's exercise scripts
+*.ipynb
+*.pptx
+*.pdf
+
+# VS Code project settings
+.vscode/
+
+# Python cache/bytecode
+__pycache__/
+*.pyc
+
+# Jupyter autosave backups
+.ipynb_checkpoints/
+
+# OS-generated files
+.DS_Store
+Thumbs.db

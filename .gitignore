@@ -1,0 +1,83 @@
+# .gitignore for the TECH2 course repository (instructor side).
+#
+# NOTE: this is NOT the file students copy into their weekly workshop folders
+# (workshops/week02/.gitignore). That one ignores *.pptx and *.pdf, because
+# slides are given material for them. Here, slides and their PDFs are course
+# content and must stay tracked.
+
+
+# --- Instructor-only, not published to students ---------------------------
+CLAUDE.md
+tools/
+
+
+# --- Editor and IDE settings ----------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipython/
+
+# Local environments, in case one is ever created inside the repo
+# (course environments live centrally in Miniforge, not in project folders)
+.venv/
+venv/
+env/
+.conda/
+
+
+# --- Jupyter --------------------------------------------------------------
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Scratch notebooks created by "New Notebook" before being named
+Untitled*.ipynb
+Untitled*.py
+
+
+# --- Microsoft Office -----------------------------------------------------
+# Lock/owner files created while a document is open (~$conda_slides.pptx)
+~$*
+
+# PowerPoint and Word recovery/temp artifacts
+*.tmp
+*.wbk
+*.asd
+*.ppt~
+~*.pptx
+
+
+# --- OneDrive and Windows -------------------------------------------------
+# This repository lives inside a OneDrive folder, so these show up regularly
+desktop.ini
+Thumbs.db
+thumbs.db
+ehthumbs.db
+*.lnk
+$RECYCLE.BIN/
+
+
+# --- macOS ----------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+
+# --- Backups, merge leftovers, misc temp files ----------------------------
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
+*~
