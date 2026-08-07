@@ -12,8 +12,6 @@ Please install the three programs below and confirm they work using the verifica
 
 Once all three are installed, go through the **[verification checklist](verify-installation.md)** to confirm everything is working.
 
-If something doesn't work, don't worry — we've reserved time in the first lecture to help. Come to class with a note of what went wrong (e.g. a screenshot of any error message).
-
 ## Reference
 
 Guides you can consult at any point during the course.
