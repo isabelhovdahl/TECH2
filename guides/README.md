@@ -19,3 +19,4 @@ Guides you can consult at any point during the course.
 | Topic | Guide |
 | --- | --- |
 | Creating, sharing, and managing conda environments | [Working with conda environments](conda-environments.md) |
+| Using AI tools without undermining your learning | [AI guidelines for learning to code](ai-guidelines.md) |

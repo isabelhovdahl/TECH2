@@ -33,7 +33,10 @@ A few things worth knowing:
 
 ## Guides
 
-The [guides/](guides/README.md) folder holds the installation instructions above, plus reference material you can come back to at any point in the course — most usefully [Working with conda environments](guides/conda-environments.md), which is a general reference for creating, sharing, and managing conda environments.
+The [guides/](guides/README.md) folder holds the installation instructions above, plus reference material you can come back to at any point in the course:
+
+- **[Working with conda environments](guides/conda-environments.md)** — a general reference for creating, sharing, and managing conda environments.
+- **[AI guidelines for learning to code](guides/ai-guidelines.md)** — how to use AI assistants so they help your learning rather than quietly replace it, and what counts as good practice when you do.
 
 ## Getting the material
 

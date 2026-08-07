@@ -1,6 +1,6 @@
 # Verification Checklist
 
-Once you've installed VS Code, Git, and Miniconda, go through this checklist to confirm everything is working. This should take about two minutes.
+Once you've installed VS Code, Git, and Miniforge, go through this checklist to confirm everything is working. This should take about two minutes.
 
 | # | Check | How | Looks right if... |
 | --- | --- | --- | --- |
