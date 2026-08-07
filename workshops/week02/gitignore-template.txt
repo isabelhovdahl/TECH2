@@ -1,5 +1,4 @@
 # Given material — not this week's exercise scripts
-*.ipynb
 *.pptx
 *.pdf
 
