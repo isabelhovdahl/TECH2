@@ -31,6 +31,12 @@ A few things worth knowing:
 - **Slides are linked as PDF.** The original PowerPoint files sit next to them in the same folder if you prefer those.
 - **From week 2 onwards, each workshop lives in its own folder with its own git repository.** Create the `.gitignore` for it by copying [gitignore-template.txt](workshops/week02/gitignore-template.txt).
 
+## Assignments
+
+Three mandatory assignments, all of which must be passed to qualify for the exam. Deadlines and submission are on Canvas.
+
+- **[Assignment 1 — Check your installation](assignments/assignment1/test-installation.ipynb)** — run the notebook and submit the report it produces.
+
 ## Guides
 
 The [guides/](guides/README.md) folder holds the installation instructions above, plus reference material you can come back to at any point in the course:
