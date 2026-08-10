@@ -2,15 +2,11 @@
 
 Miniforge gives us Python — the programming language we'll be coding in — along with `conda`, a tool for managing project environments.
 
-You may have heard of **Anaconda** or **Miniconda**, which do the same job. **Miniforge** works exactly the same way and uses the same `conda` command — the only real difference is which repository packages come from, which avoids some licensing restrictions that can affect Anaconda's own distribution. For this course, it makes no difference which of the three you use — so if you already have one, you're already set up.
+Even if you already have Python installed in some other way, please install Miniforge — the rest of the course assumes it.
 
-## Step 1: Check whether you already have Anaconda, Miniconda, or Miniforge installed
+> 📝 **Already have Miniforge?** You don't need to reinstall it. Open Terminal, run `conda update -n base -c conda-forge conda`, then go straight to the [verification checklist](verify-installation.md).
 
-1. Open your **Applications** folder, or check your home folder for a folder named `anaconda3`, `miniconda3`, or `miniforge3`.
-2. **If you find any of these:** you already have what you need — skip straight to the [verification checklist](verify-installation.md).
-3. **If you find none of these:** continue to Step 2 below.
-
-## Step 2: Check your Mac's chip
+## Step 1: Check your Mac's chip
 
 Miniforge has two different versions for Mac depending on the chip inside your computer, so you'll need to check which one you have.
 
@@ -18,16 +14,16 @@ Miniforge has two different versions for Mac depending on the chip inside your c
 2. Follow the steps there to find your **Chip** (Apple menu → About This Mac).
 3. Note whether it says **Apple M1/M2/M3/M4** (Apple Silicon) or **Intel**.
 
-## Step 3: Download Miniforge
+## Step 2: Download Miniforge
 
-Go to https://conda-forge.org/download/ and download the installer matching your chip from Step 2:
+Go to https://conda-forge.org/download/ and download the installer matching your chip from Step 1:
 
 - **Apple Silicon (M1/M2/M3/M4):** [Miniforge3-MacOSX-arm64.sh](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh)
 - **Intel:** [Miniforge3-MacOSX-x86_64.sh](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh)
 
 Unlike VS Code and Git, Miniforge on Mac doesn't have a click-through installer — it installs via a short Terminal command. Follow the steps below exactly.
 
-## Step 4: Run the installer in Terminal
+## Step 3: Run the installer in Terminal
 
 1. Open the **Terminal**: press `Cmd + Space`, type "Terminal," and press Enter.
 2. Move into your Downloads folder by typing:

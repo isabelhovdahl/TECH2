@@ -2,6 +2,8 @@
 
 VS Code is the code editor we'll use throughout the course. The installation is the same process on Windows and Mac.
 
+> 📝 **Already have VS Code?** Nothing to do — it keeps itself up to date. Skip to the [Git installation guide](README.md).
+
 ## Steps
 
 1. Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download)

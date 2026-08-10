@@ -6,6 +6,8 @@ Git is the version control tool we'll use to track and share code throughout the
 
 Install [VS Code](install-vscode.md) before you start, if you haven't already — step 4 below depends on it.
 
+> 📝 **Already have Git?** Run the installer anyway — it upgrades your existing installation rather than adding a second one.
+
 1. Go to [https://git-scm.com/download/win](https://git-scm.com/download/win)
 2. Click the link to download the most recent version of Git for Windows.
 3. Open the downloaded installer and click Next through the setup wizard. The default options are fine, with one exception — see the next step.
