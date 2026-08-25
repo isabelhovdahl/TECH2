@@ -8,7 +8,7 @@
 
 # --- Instructor-only, not published to students ---------------------------
 CLAUDE.md
-tools/
+private/
 
 
 # --- Editor and IDE settings ----------------------------------------------
