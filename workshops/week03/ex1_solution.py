@@ -1,8 +1,8 @@
 # Exercise 1 — Random Number Generator with Input Validation
 
-import random
-
 #%% Alternative 1: nested if-else with isdigit
+
+import random
 
 # Print welcome message
 print("This program draws a random integer between a lower and upper bound.\n")
@@ -33,6 +33,8 @@ else:
 
 
 #%% Alternative 2: try-except
+
+import random
 
 # Print welcome message
 print("This program draws a random integer between a lower and upper bound.\n")

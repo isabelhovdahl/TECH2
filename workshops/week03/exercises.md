@@ -26,8 +26,6 @@ except:
 
 Python first tries to run the code inside the `try` block. If an error occurs, it skips the rest of the `try` block and runs the `except` block instead.
 
-You'll need this for Exercise 3 below.
-
 ---
 
 ## Exercise 1 — Random Number Generator with Input Validation
@@ -39,6 +37,8 @@ Modify the random number generator from last week (Exercise 3) to check that the
 - Check that the upper bound is **greater than** the lower bound
 - If the inputs are invalid, display an error message instead of drawing a number
 - Otherwise, draw and display the random number
+
+> 💡 **Tip:** Build this up in stages — get the bound-checking working first (assuming the input is already a valid integer), then add the input validation around it once that part works.
 
 ---
 
