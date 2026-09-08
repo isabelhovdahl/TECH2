@@ -1,7 +1,9 @@
 # Exercise 1 (Part B) — Comparing Savings Offers
 
-# Note: this import only works if "ex1.py" is in the same folder as this
-# file, and your working directory is set to that folder.
+# Note: this import only works if the file being imported from is in the same
+# folder as this file, and your working directory is set to that folder. In
+# your own solution that file is called "ex1.py", so your import would read
+# "from ex1 import effective_interest_rate".
 from ex1_solution import effective_interest_rate
 
 # Offer (i): 5.9% compounded quarterly
