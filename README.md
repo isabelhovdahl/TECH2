@@ -36,6 +36,7 @@ A few things worth knowing:
 Three mandatory assignments, all of which must be passed to qualify for the exam. Deadlines and submission are on Canvas.
 
 - **[Assignment 1 — Check your installation](assignments/assignment1/test-installation.ipynb)** — run the notebook and submit the report it produces.
+- **[Assignment 2 — Password strength checker](assignments/assignment2/README.md)** — write a program that analyzes, scores and rates passwords.
 
 ## Guides
 
