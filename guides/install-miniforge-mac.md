@@ -43,6 +43,8 @@ Unlike VS Code and Git, Miniforge on Mac doesn't have a click-through installer 
 4. You'll be shown a license agreement. Press `Enter` or `Space` to scroll through it, then type `yes` and press Enter to accept.
 5. When asked where to install, press Enter to accept the default location.
 6. When asked **"Do you wish to update your shell profile to automatically initialize conda?"**, type `yes` and press Enter.
+
+   > 📝 **Note:** If you answered "no" (or just pressed Enter), conda won't be recognized in Terminal. You can fix this at any time by running `~/miniforge3/bin/conda init zsh`, then closing the Terminal window and opening a new one.
 7. Close the Terminal window and open a new one.
 
 ## Next step

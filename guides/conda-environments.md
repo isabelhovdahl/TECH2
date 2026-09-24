@@ -10,12 +10,13 @@ A **virtual environment** is an isolated folder containing its own copy of Pytho
 | --- | --- |
 | Check conda is working | `conda --version` |
 | List all your environments | `conda env list` |
-| Create an environment | `conda create --name my_env python=3.13` |
+| Create an environment | `conda create --name my_env python=3.14` |
 | Activate an environment | `conda activate my_env` |
 | Deactivate (return to `base`) | `conda deactivate` |
 | Install a package (into the active environment) | `conda install numpy` |
 | List packages in the active environment | `conda list` |
 | Check whether one package is installed | `conda list numpy` |
+| Check where conda gets packages from | `conda config --show channels` |
 | Save an environment to a file | `conda env export --from-history > environment.yml` |
 | Create an environment from a file | `conda env create --file environment.yml` |
 | Delete an environment | `conda env remove --name my_env` |
@@ -36,13 +37,13 @@ conda --version
 ## Creating an environment
 
 ```
-conda create --name my_env python=3.13 numpy
+conda create --name my_env python=3.14 numpy
 ```
 
-This creates an environment called `my_env` containing Python 3.13 and numpy. Breaking down the command:
+This creates an environment called `my_env` containing Python 3.14 and numpy. Breaking down the command:
 
 - `--name my_env` — the name of the environment. Use something descriptive; the project name is usually a good choice.
-- `python=3.13` — the Python version. Always include this, otherwise conda decides for you.
+- `python=3.14` — the Python version. Always include this, otherwise conda decides for you.
 - `numpy` — any packages you want installed right away. You can list several, separated by spaces, or none at all.
 
 Conda will show you what it plans to install and ask you to confirm with `y`.
@@ -96,7 +97,7 @@ Creating an environment in the terminal is only half the job — you also need t
 1. Open your project folder in VS Code.
 2. Press `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (Mac) to open the Command Palette.
 3. Type **Python: Select Interpreter** and press Enter.
-4. Choose your environment from the list — it appears as `Python 3.13 ('my_env')`.
+4. Choose your environment from the list — it appears as `Python 3.14 ('my_env')`.
 
 The selected environment is shown in the status bar at the bottom of the window. 
 
@@ -185,14 +186,38 @@ Both work, but they aren't interchangeable:
 - **Use `pip` when conda can't help.** Some packages aren't distributed through conda channels at all, and brand-new releases usually appear on PyPI (pip's repository) before conda-forge.
 - **Install conda packages first, then pip packages.** Installing with conda after pip can overwrite what pip did.
 
-> 📝 **Note:** Miniforge already uses **conda-forge** as its default channel, so you don't need to configure channels yourself. Conda-forge is a large, community-maintained package repository.
+> 📝 **Note:** Miniforge already uses **[conda-forge](https://conda-forge.org)** as its default channel, so you don't need to configure channels yourself. Conda-forge is a large, community-maintained package repository. To check, run `conda config --show channels` — it should list `conda-forge` and nothing else.
 
 ## Troubleshooting
 
 **`conda: command not found` or `'conda' is not recognized`**
-On Windows, conda is only set up in the **Miniforge Prompt** by default — use that rather than Command Prompt or PowerShell.
+
+**Windows:** conda is only set up in the **Miniforge Prompt** by default — use that rather than Command Prompt or PowerShell.
 
 VS Code's integrated terminal usually works too, but only *after* you have selected a conda environment as the interpreter for that folder (see [Using an environment in VS Code](#using-an-environment-in-vs-code)) — VS Code then activates it for you in each new terminal. If conda isn't recognized there, fall back to the Miniforge Prompt.
+
+**Mac:** you probably answered "no" (or just pressed Enter) when the installer asked whether to initialize conda. Run the following in Terminal, then close the window and open a new one:
+
+```
+~/miniforge3/bin/conda init zsh
+```
+
+Your prompt should now start with `(base)`, and `conda --version` should work.
+
+**`conda config --show channels` lists something other than `conda-forge`**
+First check that you are actually using Miniforge: run `conda info --base` and confirm that the path contains `miniforge3`. If it doesn't, conda is coming from another installation (such as Anaconda or Miniconda) — changing channels won't fix that, so ask for help instead.
+
+If the path *does* contain `miniforge3`, make conda-forge your only channel:
+
+```
+conda config --add channels conda-forge
+```
+
+```
+conda config --remove channels defaults
+```
+
+Run `conda config --show channels` again to confirm.
 
 **Conda takes a very long time, or fails with a message about conflicts**
 Conda is trying to find a combination of package versions that work together, and there may not be one. Try pinning fewer versions — for example, ask for `numpy` rather than `numpy=1.21`.
